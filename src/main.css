@@ -1,0 +1,476 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: auto;
+    background: whitesmoke;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+html {
+    font: 16px;
+
+}
+
+.container {
+    width: 1200px;
+    height: auto;
+}
+
+.img-logo {
+    width: 60px;
+    height: 55px;
+}
+
+.nav-link {
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 550;
+    padding: 0 !important;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: slide .3s ease-out;
+}
+
+.nav-active {
+    color: #2ab37a !important;
+    font-weight: 600;
+}
+
+.nav-link:hover {
+    font-weight: 600;
+    color: #2ab37a;
+}
+
+.tagline {
+    font-size: 4.5rem;
+    font-weight: 600;
+    color: #21332c;
+}
+
+.button-menu,
+.button-info {
+    background: #12c77c;
+    outline: none;
+    border: none;
+}
+
+.menu-book-icon,
+.menu-text,
+.info-icon,
+.info-text {
+    color: whitesmoke;
+    font-weight: 600;
+}
+
+@keyframes slide {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+.model-girl {
+    width: 95%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.local-dining-icon,
+.local-pizza-icon,
+.kebab-dining-icon,
+.lunch-dining-icon {
+    color: rgb(165, 165, 165);
+    position: absolute;
+    font-size: 2.5rem;
+    top: 5%;
+    animation: anim1 3s infinite;
+}
+
+.local-pizza-icon {
+    top: 50%;
+    left: 90%;
+    animation: anim2 3s infinite;
+}
+
+.kebab-dining-icon {
+    top: 25%;
+    left: 80%;
+}
+
+.lunch-dining-icon {
+    top: 40%;
+    left: 10%;
+}
+
+.svg-circle-1 {
+    position: absolute;
+    top: 85%;
+    animation: anim3 4.5s infinite;
+}
+
+.svg-circle-2 {
+    position: absolute;
+    top: 65%;
+    left: 70%;
+    animation: anim3 4.5s infinite;
+}
+
+circle {
+    fill: none;
+    stroke-width: 10px;
+    stroke: whitesmoke;
+}
+
+.circle-2,
+.circle-3,
+.circle-4 {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #2ab37a;
+    border-radius: 50%;
+    top: 20%;
+    left: 25%;
+    animation: anim1 3s infinite;
+}
+
+.circle-3 {
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    left: 75%;
+    animation: anim2 3s infinite;
+}
+
+.circle-4 {
+    width: 30px;
+    height: 30px;
+    top: 15%;
+    left: 75%;
+    animation: anim1 3s infinite;
+}
+
+@keyframes anim1 {
+    0% {
+        transform: translateY(0) scale(1) rotate(0);
+    }
+
+    25% {
+        transform: translateY(-5px) scale(1.1) rotate(-5deg);
+    }
+
+    75% {
+        transform: translateY(-5px) scale(1.1) rotate(5deg);
+    }
+
+    100% {
+        transform: translateY(0) scale(1) rotate(0);
+    }
+
+}
+
+@keyframes anim2 {
+    0% {
+        transform: translateY(0) scale(1) rotate(0);
+    }
+
+    25% {
+        transform: translateY(5px) scale(1.1) rotate(5deg);
+    }
+
+    75% {
+        transform: translateY(5px) scale(1.1) rotate(-5deg);
+    }
+
+    100% {
+        transform: translateY(0) scale(1) rotate(0);
+    }
+}
+
+@keyframes anim3 {
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-15px);
+    }
+
+    75% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.img-restaurant-container {
+    position: relative;
+    width: fit-content;
+}
+
+
+.restaurant {
+    width: 475px;
+    height: 650px;
+}
+
+.circle-5,
+.circle-6,
+.circle-7,
+.circle-8,
+.circle-9,
+.circle-10 {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.45);
+    border-radius: 50%;
+    animation: anim1 3s infinite;
+}
+
+.circle-5 {
+    top: 25%;
+    left: 25%;
+    height: 50px;
+    width: 50px;
+}
+
+.circle-6 {
+    top: 55%;
+    left: 55%;
+    height: 30px;
+    width: 30px;
+}
+
+.circle-7 {
+    top: 10%;
+    left: 90%;
+    height: 35px;
+    width: 35px;
+}
+
+.circle-8 {
+    top: 90%;
+    left: 10%;
+    height: 15px;
+    width: 15px;
+}
+
+.circle-9 {
+    top: 80%;
+    left: 70%;
+    height: 55px;
+    width: 55px;
+}
+
+.circle-9 {
+    top: 5%;
+    left: 10%;
+    height: 10px;
+    width: 10px;
+}
+
+@media (max-width:990px) {
+    .restaurant {
+        width: 100%;
+        height: 450px;
+    }
+
+    .img-restaurant-container {
+        width: 100%;
+    }
+}
+
+.tagline-2 {
+    font-size: 3rem;
+    margin-bottom: 3.2rem;
+    text-align: start;
+    font-weight: 800;
+    text-align: center;
+    color: #21332c;
+}
+
+.span-01,
+.span-02,
+.span-03 {
+    font-family: 'Anton', sans-serif;
+    font-size: 3.85rem;
+    color: #2ab37a;
+}
+
+.deliver-now {
+    background: #2ab37a;
+    outline: none;
+    border: none;
+}
+
+.tapas,
+.local-bar,
+.dinner-dining,
+.cake {
+    font-size: 4.5rem;
+    color: black;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.tapas:hover,
+.local-bar:hover,
+.dinner-dining:hover,
+.cake:hover {
+    color: #2ab37a;
+    transform: rotate(360deg);
+}
+
+.starters,
+.drinks,
+.main-dishes,
+.desserts {
+    margin-top: 0;
+    padding-top: 2rem;
+    font-weight: 650;
+    color: #21332c;
+}
+
+
+h4 {
+    font-weight: 600;
+    color: #21332c;
+}
+
+.left-arrow,
+.right-arrow {
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.left-arrow {
+    cursor: not-allowed;
+    color: rgba(0, 0, 0, 0.12);
+}
+
+.shrimp-pasta,
+.rib-eye-steak,
+.chicken-madeira,
+.salmon,
+.laksa,
+.mongolian-beef,
+.prawn,
+.crab {
+    width: auto;
+    height: 200px;
+}
+
+.shrimp-pasta-title,
+.rib-eye-steak-title,
+.chicken-madeira-title,
+.salmon-title,
+.laksa-title,
+.mongolian-beef-title,
+.prawn-title,
+.crab-title {
+    font-weight: 600;
+    text-align: center;
+}
+
+.recommended {
+    font-weight: 600;
+    color: #21332c;
+}
+
+.hide {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+.show {
+    opacity: 1;
+    transform: translateX(0%);
+    transition: all 1s ease;
+}
+
+.show-card {
+    opacity: 1;
+    transform: translateX(0%);
+    transition: all 1s ease;
+}
+
+.card-pasta {
+    transition-delay: 0.125s;
+}
+
+.card-chicken {
+    transition-delay: 0.25s;
+}
+
+.card-rib {
+    transition-delay: 0.375s;
+}
+
+.card-salmon {
+    transition-delay: 0.5s;
+}
+
+.card-laksa {
+    transition-delay: 0.625s;
+}
+
+.card-mongolian-beef {
+    transition-delay: 0.75s;
+}
+
+.card-prawn {
+    transition-delay: 0.875s;
+}
+
+.card-crab {
+    transition-delay: 1s
+}
+
+.hide-main {
+    opacity: 0;
+}
+
+.hide-section-1 {
+    opacity: 0;
+    transform: translateY(100%);
+}
+
+.hide-section-2,
+.hide-card-section-4 {
+    opacity: 0;
+    transform: translateX(-100%)
+}
+
+.hide-section-3 {
+    opacity: 0;
+    transform: translateX(20%)
+}
+
+
+.show-main {
+    opacity: 1;
+    transition: all 1s ease;
+}
+
+.show-section-1 {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 1s ease;
+}
+
+.show-section-2,
+.show-section-3 {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all .7s ease;
+}
+
+.show-card-section-4 {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 1s ease;
+}
